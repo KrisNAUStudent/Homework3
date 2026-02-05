@@ -1,0 +1,83 @@
+.container {
+    height: 600px ;
+    display: grid;
+    grid-template-rows: 
+     40px
+     1fr 
+     1fr
+     1fr
+     40px;
+    grid-template-columns: 200px repeat(3, 1fr); 
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-template-areas:
+    "header header header header" 
+    "sidebar main main main"
+    "sidebar2 main2 main2 main2"
+    "sidebar3 main3 main3 main3"
+    "footer footer footer footer";
+
+    
+
+
+}
+
+div {
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.sidebar2{
+    grid-area: sidebar2;
+}
+
+.sidebar3{
+    grid-area: sidebar3;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.main-content2 {
+    grid-area: main2;
+}
+
+.main-content3 {
+    grid-area: main3;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: left;
+    
+}
+
+a[href^="tel:"] {
+    color: lightgrey;
+    text-decoration: none;
+
+}
+
+a[href^="mailto:"] {
+    color: lightgrey;
+    text-decoration: none;
+
+}
+
+a[download] {
+    color: purple;
+}
